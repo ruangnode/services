@@ -1,7 +1,7 @@
 ---
 cover: >-
-  https://images.unsplash.com/photo-1528605248644-14dd04022da1?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHwxMHx8dGVhbSUyMG9mJTIwcGVvcGxlfGVufDB8fHx8MTY2MDMxNzQzNg&ixlib=rb-1.2.1&q=80
-coverY: 0
+  https://images.unsplash.com/photo-1684020273098-95959b732b42?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODg0Nzc2NDh8&ixlib=rb-4.0.3&q=85
+coverY: -3
 ---
 
 # 👋 Welcome!

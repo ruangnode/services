@@ -2,23 +2,15 @@
 
 * [👋 Welcome!](README.md)
 
-## About us
+## Mainnet
 
-* [🚀 Vision, Mission & Focus](about-us/vision-mission-and-focus/README.md)
-  * [Vision](about-us/vision-mission-and-focus/vision.md)
-  * [Mission](about-us/vision-mission-and-focus/mission.md)
-  * [Focus](about-us/vision-mission-and-focus/focus.md)
-* [💖 Values](about-us/values.md)
+* [Soon](mainnet/soon.md)
 
-## Team
+## Testnet
 
-* [👋 Meet the Team!](team/meet-the-team.md)
+* [Wormholes](testnet/wormholes.md)
+* [Taiko](testnet/taiko.md)
 
-## Collaborating
+## Monitoring Tools
 
-* [🤝 How we Work Together](collaborating/how-we-work-together.md)
-* [📅 Meetings](collaborating/meetings.md)
-
-## Policies
-
-* [🌴 Requesting Time Off](policies/requesting-time-off.md)
+* [Grafana](monitoring-tools/grafana.md)
