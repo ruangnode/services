@@ -1,16 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: false
-  outline:
-    visible: false
-  pagination:
-    visible: false
----
+[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=ruangnode.github.io/services)](https://github.com/ruangnode/services)
 
-# 👋 Ruangnode!
 
