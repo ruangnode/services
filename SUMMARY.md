@@ -11,6 +11,6 @@
 * [Wormholes](testnet/wormholes.md)
 * [Taiko](testnet/taiko.md)
 
-## Monitoring Tools
+## Monitoring
 
-* [Grafana](monitoring-tools/grafana.md)
+* [Install Monitoring Stack](monitoring/monitoring-stack.md)
