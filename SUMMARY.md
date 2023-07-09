@@ -10,6 +10,8 @@
 
 * [Wormholes](testnet/wormholes.md)
 * [Taiko](testnet/taiko.md)
+* [Opside](testnet/opside.md)
+* [CreditCoin](testnet/creditcoin.md)
 
 ## Monitoring
 
