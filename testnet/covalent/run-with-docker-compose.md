@@ -70,8 +70,10 @@ export EVM_SERVER_URL="http://127.0.0.1:3002"
 
 ```
 $ direnv allow .
+```
 
-# make sure you see these being loaded
+```
+# make sure you see output these being loaded
 direnv: loading ~/rudder/.envrc
 direnv: loading ~/rudder/.envrc.local
 direnv: export +BLOCK_RESULT_OPERATOR_PRIVATE_KEY +ERIGON_NODE +EVM_SERVER_URL +IPFS_PINNER_URL +NODE_ETHEREUM_MAINNET +WEB3_JWT
