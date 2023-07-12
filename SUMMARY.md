@@ -12,7 +12,7 @@
 * [Taiko](testnet/taiko/README.md)
   * [Enable a proposer](testnet/taiko/enable-a-proposer.md)
   * [Enable Prover](testnet/taiko/enable-prover.md)
-* [Opside](testnet/opside/README.md)
+* [Opside](testnet/opside.md)
   * [PoS Validataor](testnet/opside/pos-validataor.md)
 * [CreditCoin](testnet/creditcoin.md)
 * [Swisstronik](testnet/swisstronik/README.md)
