@@ -12,6 +12,8 @@
 * [Taiko](testnet/taiko.md)
 * [Opside](testnet/opside.md)
 * [CreditCoin](testnet/creditcoin.md)
+* [Swisstronik](testnet/swisstronik/README.md)
+  * [Create Solidity Contract](testnet/swisstronik/create-solidity-contract.md)
 
 ## Monitoring
 
