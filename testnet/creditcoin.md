@@ -1,6 +1,8 @@
-# CreditCoin
+---
+description: Run with docker
+---
 
-Run with docker
+# CreditCoin
 
 ```
 docker run -d \

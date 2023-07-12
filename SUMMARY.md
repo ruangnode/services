@@ -9,7 +9,9 @@
 ## Testnet
 
 * [Wormholes](testnet/wormholes.md)
-* [Taiko](testnet/taiko.md)
+* [Taiko](testnet/taiko/README.md)
+  * [Enable a proposer](testnet/taiko/enable-a-proposer.md)
+  * [Enable Prover](testnet/taiko/enable-prover.md)
 * [Opside](testnet/opside.md)
 * [CreditCoin](testnet/creditcoin.md)
 * [Swisstronik](testnet/swisstronik/README.md)
