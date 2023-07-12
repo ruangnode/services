@@ -21,6 +21,7 @@
 * [Covalent](testnet/covalent/README.md)
   * [Validator & Operator Dashboard](testnet/covalent/validator-and-operator-dashboard.md)
   * [Run with Docker Compose](testnet/covalent/run-with-docker-compose.md)
+  * [Monitoring used increment](testnet/covalent/monitoring-used-increment.md)
 
 ## Monitoring
 
