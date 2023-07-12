@@ -8,7 +8,8 @@
 
 ## Testnet
 
-* [Wormholes](testnet/wormholes.md)
+* [Wormholes](testnet/wormholes/README.md)
+  * [Monitoring script](testnet/wormholes/monitoring-script.md)
 * [Taiko](testnet/taiko/README.md)
   * [Enable a proposer](testnet/taiko/enable-a-proposer.md)
   * [Enable Prover](testnet/taiko/enable-prover.md)
