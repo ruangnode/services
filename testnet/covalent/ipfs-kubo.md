@@ -30,4 +30,8 @@ Discovery.MDNS.Enabled = false, Swarm.DisableNatPortMap = true
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt="" width="326"><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+After modify file config please `apply profile server`
+{% endhint %}
+
 [^1]: 
