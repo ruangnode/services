@@ -23,6 +23,7 @@
   * [Run with Docker Compose](testnet/covalent/run-with-docker-compose.md)
   * [Monitoring used increment](testnet/covalent/monitoring-used-increment.md)
   * [Grafana & Prometheus Alerting](testnet/covalent/grafana-and-prometheus-alerting.md)
+  * [Ipfs Kubo](testnet/covalent/ipfs-kubo.md)
 
 ## Monitoring
 
