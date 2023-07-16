@@ -4,7 +4,7 @@
 
 ## Mainnet
 
-* [N/A](mainnet/wormholes.md)
+* [N/A](mainnet/n-a.md)
 
 ## Testnet
 
