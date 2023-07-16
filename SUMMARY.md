@@ -13,7 +13,7 @@
 * [Taiko](testnet/taiko/README.md)
   * [Enable a proposer](testnet/taiko/enable-a-proposer.md)
   * [Enable Prover](testnet/taiko/enable-prover.md)
-* [Opside](testnet/opside.md)
+* [Opside](testnet/opside/README.md)
   * [PoS Validataor](testnet/opside/pos-validataor.md)
 * [CreditCoin](testnet/creditcoin.md)
 * [Swisstronik](testnet/swisstronik/README.md)
@@ -30,4 +30,4 @@
 
 ## Troubleshooting
 
-* [Abuse NetscanOutLevel: Netscan detected Issues in Server](testnet/covalent/ipfs-kubo.md)
+* [Abuse NetscanOutLevel: Netscan detected Issues in Server](troubleshooting/abuse-netscanoutlevel-netscan-detected-issues-in-server.md)
