@@ -1,6 +1,6 @@
-# Abuse Netscan Issue in Server
+# Abuse NetscanOutLevel: Netscan detected Issues in Server
 
-**Requierment Linux x86\_64 (Ubuntu 22.04 LTS) used Ipfs Kubu**
+**Requierment Linux x86\_64 (Ubuntu 22.04 LTS) used Ipfs Kubo**
 
 ```
 wget https://dist.ipfs.tech/go-ipfs/v0.18.0/go-ipfs_v0.18.0_linux-amd64.tar.gz

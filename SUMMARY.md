@@ -30,4 +30,4 @@
 
 ## Troubleshooting
 
-* [Abuse NetscanOutLevel: Netscan detected Issues in Server](troubleshooting/abuse-netscanoutlevel-netscan-detected-issues-in-server.md)
+* [Abuse NetscanOutLevel: Netscan detected Issues in Server](testnet/covalent/ipfs-kubo.md)
