@@ -4,28 +4,17 @@ description: Run with docker
 
 # Taiko
 
-```
-git clone https://github.com/taikoxyz/simple-taiko-node.git 
-cd simple-taiko-node
-```
+## Run a Taiko node
 
-First, copy the `.env.sample` to a new file `.env`:
+### Overview
 
-```
-cp .env.sample .env
-```
+This guide will walk you through the process of operating a Taiko node via [simple-taiko-node(opens in a new tab)](https://github.com/taikoxyz/simple-taiko-node). You will be able to:
 
-```
-nano .env
-```
+* Run a Taiko node easily from the command line on Windows, Mac, and Linux.
+* View a [Grafana(opens in a new tab)](https://grafana.com/) dashboard which displays the node's status.
 
-Please input your HTTP and WSS&#x20;
+### Prerequisites
 
-{% hint style="info" %}
-You can get a Sepolia L1 endpoint from a few places, but it **must point to an archive node** to access the state trie beyond the last 128 blocks.
-
-**Recommended**: Run your own Sepolia archive node, see: [Run a Sepolia node](https://taiko.xyz/docs/guides/run-a-sepolia-node). This is recommended because you will eventually be rate-limited by public RPC providers.
-
-**Alternative**: [Alchemy(opens in a new tab)](https://www.alchemy.com/) and [Infura(opens in a new tab)](https://www.infura.io/) are two popular RPC providers. Make sure you select the RPC as Sepolia testnet, and not Ethereum mainnet.
-{% endhint %}
-
+* [Docker(opens in a new tab)](https://docs.docker.com/engine/install/) is installed and **running**.
+* [Git(opens in a new tab)](https://github.com/git-guides/install-git/) is installed.
+* Consult the [Geth minimum hardware requirements(opens in a new tab)](https://github.com/ethereum/go-ethereum#hardware-requirements), but ignore the storage requirement as Taiko nodes will require less storage. Around 50GB should be more than enough initially, but over time it could become insufficient as the chain grows. As of `2023-06-21T16:59:11+00:00` a Taiko node sync takes **17.3 GB**.

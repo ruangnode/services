@@ -9,8 +9,10 @@
 ## Testnet
 
 * [Wormholes](testnet/wormholes/README.md)
+  * [Run with Docker](testnet/wormholes/run-with-docker.md)
   * [Monitoring script](testnet/wormholes/monitoring-script.md)
 * [Taiko](testnet/taiko/README.md)
+  * [Run with Docker](testnet/taiko/run-with-docker.md)
   * [Enable a proposer](testnet/taiko/enable-a-proposer.md)
   * [Enable Prover](testnet/taiko/enable-prover.md)
 * [Opside](testnet/opside/README.md)
@@ -22,7 +24,7 @@
   * [Run with Docker Compose](testnet/covalent/run-with-docker-compose.md)
   * [Monitoring used increment](testnet/covalent/monitoring-used-increment.md)
   * [Grafana & Prometheus Alerting](testnet/covalent/grafana-and-prometheus-alerting.md)
-* [CreditCoin](testnet/creditcoin/README.md)
+* [CreditCoin](testnet/creditcoin.md)
   * [Run with Docker](testnet/creditcoin/run-with-docker.md)
 
 ## Monitoring
