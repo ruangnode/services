@@ -4,7 +4,7 @@
 
 ## Mainnet
 
-* [Soon](mainnet/soon.md)
+* [N/A](mainnet/wormholes.md)
 
 ## Testnet
 
@@ -23,8 +23,11 @@
   * [Run with Docker Compose](testnet/covalent/run-with-docker-compose.md)
   * [Monitoring used increment](testnet/covalent/monitoring-used-increment.md)
   * [Grafana & Prometheus Alerting](testnet/covalent/grafana-and-prometheus-alerting.md)
-  * [Ipfs Kubo](testnet/covalent/ipfs-kubo.md)
 
 ## Monitoring
 
 * [Install Monitoring Stack](monitoring/monitoring-stack.md)
+
+## Troubleshooting
+
+* [Abuse Netscan Issue in Server](troubleshooting/abuse-netscan-issue-in-server.md)
