@@ -15,7 +15,6 @@
   * [Enable Prover](testnet/taiko/enable-prover.md)
 * [Opside](testnet/opside/README.md)
   * [PoS Validataor](testnet/opside/pos-validataor.md)
-* [CreditCoin](testnet/creditcoin.md)
 * [Swisstronik](testnet/swisstronik/README.md)
   * [Create Solidity Contract](testnet/swisstronik/create-solidity-contract.md)
 * [Covalent](testnet/covalent/README.md)
@@ -23,6 +22,8 @@
   * [Run with Docker Compose](testnet/covalent/run-with-docker-compose.md)
   * [Monitoring used increment](testnet/covalent/monitoring-used-increment.md)
   * [Grafana & Prometheus Alerting](testnet/covalent/grafana-and-prometheus-alerting.md)
+* [CreditCoin](testnet/creditcoin/README.md)
+  * [Run with Docker](testnet/creditcoin/run-with-docker.md)
 
 ## Monitoring
 
