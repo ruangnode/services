@@ -3,7 +3,7 @@
 ![ruangnode](https://komarev.com/ghpvc/?username=ruangnode\&label=Profile%20views\&color=0e75b6\&style=flat)
 
 * My website [https://ruangnode.com](https://ruangnode.com)
-* Medium [https://ruangnode.medium.com/](https://ruangnode.medium.com/)
+* Medium [https://ruangnode.medium.com](https://ruangnode.medium.com/)
 * Github [https://github.com/ruangnode](https://github.com/ruangnode)
 
 #### Languages and Tools:
