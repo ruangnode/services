@@ -56,3 +56,54 @@ Don't forget to change `tx_sender` and modify the `- INTERVAL`
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+```
+WITH proofs_per_operator AS (
+    SELECT
+        COUNT(*) AS proofs,
+        HEX(tx_sender) AS Operator,
+        NOW() AS live_time,
+        toStartOfInterval(toDateTime(signed_at), INTERVAL 1 DAY) AS interval_start_raw
+    FROM
+        blockchains.all_chains
+    WHERE
+        chain_name = 'moonbeam_moonbase_alpha'
+        AND toDate(signed_at) >= '2023-07-14'
+        AND topic0 = UNHEX('8741f5bf89731b15f24deb1e84e2bbd381947f009ee378a2daa15ed8abfb9485')
+        AND HEX(tx_sender) NOT IN ('CAD9082D5F5E818B1A528A128B6688B8CB484037', '8C0E1EBAC3E4513C5D2338D2BA47CA4BB3483D01')
+    GROUP BY
+        Operator,
+        interval_start_raw
+),
+total_submissions_per_operator AS (
+    SELECT
+        Operator,
+        SUM(proofs) AS total_submissions_per_operator
+    FROM proofs_per_operator
+    GROUP BY Operator
+),
+ranked_operators AS (
+    SELECT
+        Operator,
+        total_submissions_per_operator,
+        ROW_NUMBER() OVER (ORDER BY total_submissions_per_operator DESC) AS operator_rank
+    FROM total_submissions_per_operator
+)
+SELECT
+    DISTINCT ppo.Operator,
+    MAX(ppo.live_time) AS live_time,
+    MAX(ppo.proofs) AS proofs,
+    rpo.total_submissions_per_operator
+FROM proofs_per_operator ppo
+JOIN ranked_operators rpo
+ON ppo.Operator = rpo.Operator
+GROUP BY
+    ppo.Operator,
+    rpo.total_submissions_per_operator,
+    rpo.operator_rank
+ORDER BY
+    rpo.operator_rank, proofs DESC
+
+```
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
