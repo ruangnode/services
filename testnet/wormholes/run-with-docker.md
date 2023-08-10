@@ -117,7 +117,7 @@ else
         exit 1
 fi
 
-docker run -id -p 30333:30303 -p 8549:8545 -v $HOME/erb/.erbie:/erb/.erbie --name erbie erbie/erbie:v1
+docker run -id -p 30303:30303 -p 8545:8545 -v $HOME/erb/.erbie:/erb/.erbie --name erbie erbie/erbie:v1
 
 while true
 do
