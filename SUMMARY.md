@@ -8,7 +8,7 @@
 
 ## Testnet
 
-* [Wormholes](testnet/wormholes/README.md)
+* [Erbie](testnet/wormholes/README.md)
   * [Run with Docker](testnet/wormholes/run-with-docker.md)
   * [Monitoring script](testnet/wormholes/monitoring-script.md)
 * [Taiko](testnet/taiko/README.md)
