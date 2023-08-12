@@ -1,8 +1,6 @@
 # EVM Wallet by PrivateKey
 
-you can use this tutorial to get UTC file for your wallet from a private key.
-
-
+> you can use this tutorial to get UTC file for your wallet from a private key.
 
 ```
 // install dependencies
