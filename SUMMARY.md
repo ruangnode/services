@@ -34,3 +34,4 @@
 ## Troubleshooting
 
 * [Abuse NetscanOutLevel: Netscan detected Issues in Server](troubleshooting/abuse-netscanoutlevel-netscan-detected-issues-in-server.md)
+* [EVM Wallet by PrivateKey](troubleshooting/evm-wallet-by-privatekey.md)
