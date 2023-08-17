@@ -23,7 +23,7 @@
   * [Validator & Operator Dashboard](testnet/covalent/validator-and-operator-dashboard.md)
   * [Run with Docker Compose](testnet/covalent/run-with-docker-compose.md)
   * [Monitoring used increment](testnet/covalent/monitoring-used-increment.md)
-  * [Grafana & Prometheus Alerting](testnet/covalent/grafana-and-prometheus-alerting.md)
+  * [Monitoring View](testnet/covalent/monitoring-view.md)
 * [CreditCoin](testnet/creditcoin/README.md)
   * [Run with Docker](testnet/creditcoin/run-with-docker.md)
 
