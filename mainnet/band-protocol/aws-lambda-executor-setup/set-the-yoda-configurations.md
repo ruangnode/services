@@ -7,7 +7,7 @@ Use the command below to config your Yoda, replacing `$VARIABLES` with their act
 ```
 rm -rf ~/.yoda # clear old config if exist
 yoda config chain-id $CHAIN_ID
-yoda config node http://localhost:26657
+yoda config node http://localhost:16700
 yoda config broadcast-timeout "5m"
 yoda config rpc-poll-interval "1s"
 yoda config max-try 5
@@ -68,7 +68,7 @@ After `yoda` service has been started, logs can be queried by running `journalct
 
 ```
 ... systemd[...]: Started Yoda Daemon.
-... yoda[...]: I[...] ⭐  Creating HTTP client with node URI: tcp://localhost:26657
+... yoda[...]: I[...] ⭐  Creating HTTP client with node URI: tcp://localhost:16700
 ... yoda[...]: I[...] 🚀  Starting WebSocket subscriber
 ... yoda[...]: I[...] 👂  Subscribing to events with query: tm.event = 'Tx'...
 ```
@@ -77,4 +77,4 @@ After `yoda` service has been started, logs can be queried by running `journalct
 
 It is imperative to exercise caution and allow adequate time for the newly started BandChain node to synchronize its blocks until it has reached the latest block. The latest block can be verified on [CosmoScan](https://cosmoscan.io/blocks).
 
-Go to Active Oracle session click here [Oracle Activation](../command-band.md#oracle)
+Go to Active Oracle section click here [Oracle Activation](../command-band.md#oracle)
