@@ -139,4 +139,4 @@ Validate Genesis
 bandd validate-genesis
 ```
 
-Edit config, You can refer to [Broken link](broken-reference "mention")
+Edit config, You can refer to [Edit Configuration](edit-configuration.md)
