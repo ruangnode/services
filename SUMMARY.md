@@ -4,7 +4,17 @@
 
 ## Mainnet
 
-* [N/A](mainnet/n-a.md)
+* [Covalent](mainnet/covalent/README.md)
+  * [Validator & Operator Dashboard](mainnet/covalent/validator-and-operator-dashboard.md)
+  * [Run with Docker Compose](mainnet/covalent/run-with-docker-compose.md)
+  * [Monitoring used increment](mainnet/covalent/monitoring-used-increment.md)
+  * [Monitoring View](mainnet/covalent/monitoring-view.md)
+* [Band Protocol](mainnet/band-protocol/README.md)
+  * [Installation Validator](mainnet/band-protocol/installation-validator.md)
+  * [Up and Running](mainnet/band-protocol/up-and-running.md)
+  * [Edit Configuration](mainnet/band-protocol/edit-configuration.md)
+  * [Command Band](mainnet/band-protocol/command-band.md)
+  * [Endpoint Public](mainnet/band-protocol/endpoint-public.md)
 
 ## Testnet
 
@@ -19,11 +29,6 @@
   * [PoS Validataor](testnet/opside/pos-validataor.md)
 * [Swisstronik](testnet/swisstronik/README.md)
   * [Create Solidity Contract](testnet/swisstronik/create-solidity-contract.md)
-* [Covalent](testnet/covalent/README.md)
-  * [Validator & Operator Dashboard](testnet/covalent/validator-and-operator-dashboard.md)
-  * [Run with Docker Compose](testnet/covalent/run-with-docker-compose.md)
-  * [Monitoring used increment](testnet/covalent/monitoring-used-increment.md)
-  * [Monitoring View](testnet/covalent/monitoring-view.md)
 * [CreditCoin](testnet/creditcoin/README.md)
   * [Run with Docker](testnet/creditcoin/run-with-docker.md)
 
