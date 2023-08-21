@@ -8,7 +8,7 @@ Yoda uses an external executor to resolve requests to data sources. Currently, i
 
 In your AWS account, go to [AWS Lambda Page](https://ap-southeast-1.console.aws.amazon.com/lambda/home?region=ap-southeast-1#/functions) and click **Create function**.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Follow the following steps:
 
@@ -17,41 +17,41 @@ Follow the following steps:
 * Set **Runtime** to `Python 3.7`
 * For **permission**, if you don't have an existing role, create a new one.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Click **Create function**. Once everything is complete, You will see this page.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 Scroll down to Function code panel and click Actions -> Upload a `.zip` file. You will need to upload [the runtime zip](https://github.com/bandprotocol/data-source-runtime/releases/download/v2.0.0/lambda-yoda.zip).
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 Go to **Configuration - Environment variabeles - Edit**\
 **Environment variables** section and add 2 environment variables: `MAX_EXECUTABLE` to 8192 (8 MB) and `MAX_DATA_SIZE` to 256.
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 Go to **Configuration - General Configuration - Edit** \
 **Basic Settings** and update the runtime configurations. We recommend using 512MB RAM and 12 seconds timeout.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 We will use **API Gateway** for receiving a request from our Yoda program. Let’s create a new trigger by clicking **+ Add trigger** -> **API Gateway** and follow the setup wizard to create a new API endpoint connecting to your Lambda function.
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 Once completed, you will see the **API endpoint** that will be used as the endpoint URL to test your Lambda function.
 
@@ -78,3 +78,5 @@ The expected result should be:
     "version": "lambda:1.1.2"
 }
 ```
+
+Go to Active Oracle session click here [Setup Yoda](set-the-yoda-configurations.md#step-52-set-the-yoda-configurations)
