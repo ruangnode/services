@@ -1,6 +1,6 @@
 # Installation Validator
 
-**Chain ID**: Band Protocol | **Latest Binary Version**: v2.5.2
+**Chain ID**: laozi-mainnet | **Latest Binary Version**: v2.5.2
 
 Update and install packages for compiling
 
