@@ -15,6 +15,7 @@
   * [Edit Configuration](mainnet/band-protocol/edit-configuration.md)
   * [Command Band](mainnet/band-protocol/command-band.md)
   * [Endpoint Public](mainnet/band-protocol/endpoint-public.md)
+  * [AWS lambda executor setup](mainnet/band-protocol/aws-lambda-executor-setup.md)
 
 ## Testnet
 

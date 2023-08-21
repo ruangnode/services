@@ -1,4 +1,4 @@
-# Grafana & Prometheus Alerting
+# Monitoring View
 
 For installed you can Visit the [LINK](https://docs.ruangnode.com/monitoring/monitoring-stack)
 
@@ -543,6 +543,6 @@ Observe live the gauge time series graphs with plots for example with metrics fo
 }
 ```
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
