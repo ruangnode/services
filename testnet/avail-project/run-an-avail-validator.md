@@ -88,7 +88,7 @@ tar -xvzf data-avail-linux-amd64.tar.gz
 ```
 
 ```
-cp data-avail-linux-amd64.tar.gz data-avail
+cp data-avail-linux-amd64 data-avail
 ```
 
 ```
