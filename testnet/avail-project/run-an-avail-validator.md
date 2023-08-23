@@ -84,8 +84,14 @@ wget https://availproject.github.io/assets/files/chainspec.raw-1905ee8ba4620c9cd
 **Extract File**
 
 ```
-tar -xvzf tar xvzf data-avail-linux-amd64.tar.gz
+tar -xvzf data-avail-linux-amd64.tar.gz
+```
+
+```
 cp data-avail-linux-amd64.tar.gz data-avail
+```
+
+```
 cp chainspec.raw-1905ee8ba4620c9cd6f1f378a84346eb.json chainspec.raw.json
 ```
 
