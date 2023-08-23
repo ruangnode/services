@@ -93,7 +93,7 @@ cp chainspec.raw-1905ee8ba4620c9cd6f1f378a84346eb.json chainspec.raw.json
 
 ```
 export USERNAME=$(whoami)
-cat > ${HOME}/systemd/availd.service  <<EOF
+cat > ${HOME}/avail-node/systemd/availd.service  <<EOF
 
 [Unit]
 Description=Avail Validator
