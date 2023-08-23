@@ -116,7 +116,7 @@ EOF
 Linking to Systemd
 
 ```bash
-ln -sf ${HOME}/systemd/availd.service /etc/systemd/system/
+sudo ln -sf ${HOME}/avail-node/systemd/availd.service /etc/systemd/system/
 ```
 
 Reload Daemon
