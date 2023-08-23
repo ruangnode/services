@@ -67,6 +67,12 @@ mkdir -p ${HOME}/avail-node/systemd
 
 **Download The Required Files**
 
+go to dir **/**_**avail-node**_ for the setup validator
+
+```
+cd avail-node
+```
+
 ```sh
 wget https://github.com/availproject/avail/releases/download/v1.6.2-rc1/data-avail-linux-amd64.tar.gz
 ```
