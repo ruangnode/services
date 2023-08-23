@@ -15,9 +15,7 @@ sudo apt install curl git jq lz4 build-essential -y
 **Running in user** (Assume) : _admin_ We never used this username in our production !
 {% endhint %}
 
-Create User, Please Refer to [Broken link](broken-reference "mention")
-
-Login as User salinem
+Login as User _admin_
 
 ```bash
 su - admin

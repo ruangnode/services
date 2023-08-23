@@ -33,9 +33,7 @@ sudo apt install make clang pkg-config libssl-dev build-essential
 **Running in user** (Assume) : _admin_ We never used this username in our production !
 {% endhint %}
 
-Create User, Please Refer to [Broken link](broken-reference "mention")
-
-Login as User salinem
+Login as User _admin_
 
 ```bash
 su - admin
