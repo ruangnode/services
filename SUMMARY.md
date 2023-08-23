@@ -33,6 +33,9 @@
   * [Create Solidity Contract](testnet/swisstronik/create-solidity-contract.md)
 * [CreditCoin](testnet/creditcoin/README.md)
   * [Run with Docker](testnet/creditcoin/run-with-docker.md)
+* [Avail Project](testnet/avail-project/README.md)
+  * [Run an Avail Validator](testnet/avail-project/run-an-avail-validator.md)
+  * [Staking Set-up](testnet/avail-project/staking-set-up.md)
 
 ## Monitoring
 
