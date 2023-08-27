@@ -1,8 +1,4 @@
----
-description: Install Grafana and Prometheus
----
-
-# Install Monitoring Stack
+# Grafana & Prometheus
 
 ```sh
 #!/bin/bash
