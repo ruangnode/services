@@ -1,4 +1,4 @@
-# Submit Result Block Covalent Rudder
+# Covalent Rudder: Submit Result Block
 
 ```python
 import requests
@@ -6,9 +6,9 @@ from requests.auth import HTTPBasicAuth
 import json
 import time
 
-API_KEY = 'COVALENT_API_KEY' //change with api_key covalent 
-ADDRESS = 'WALLET_ADDRESS' //change with your wallet address
-KUMA_UPTIME_WEBHOOK = 'https://monitor.ruangnode.com/api/push/TOKEN' //Please change TOKEN with your personal token
+API_KEY = 'COVALENT_API_KEY' #change with api_key covalent 
+ADDRESS = 'WALLET_ADDRESS' #change with your wallet address
+KUMA_UPTIME_WEBHOOK = 'https://monitor.ruangnode.com/api/push/TOKEN' #Please change TOKEN with your personal token
 
 last_total_count = None
 unchanged_count_duration = 0

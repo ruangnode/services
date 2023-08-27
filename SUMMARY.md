@@ -39,9 +39,9 @@
 
 ## Monitoring & Alerting
 
-* [Install Monitoring Stack](monitoring-and-alerting/monitoring-stack.md)
+* [Install Monitoring Stack](monitoring/monitoring-stack.md)
 * [Alerting](monitoring-and-alerting/alerting/README.md)
-  * [Submit Result Block Covalent Rudder](monitoring-and-alerting/alerting/submit-result-block-covalent-rudder.md)
+  * [Covalent Rudder: Submit Result Block](monitoring-and-alerting/alerting/covalent-rudder-submit-result-block.md)
 
 ## Troubleshooting
 
