@@ -39,7 +39,7 @@
 
 ## Monitoring & Alerting
 
-* [Install Monitoring Stack](monitoring-and-alerting/monitoring-stack/README.md)
+* [Install Monitoring Stack](monitoring/monitoring-stack.md)
   * [Grafana & Prometheus](monitoring-and-alerting/monitoring-stack/grafana-and-prometheus.md)
   * [Uptime Kuma](monitoring-and-alerting/monitoring-stack/uptime-kuma.md)
 * [Alerting](monitoring-and-alerting/alerting/README.md)
