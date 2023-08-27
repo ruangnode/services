@@ -37,9 +37,11 @@
   * [Run an Avail Validator](testnet/avail-project/run-an-avail-validator.md)
   * [Staking Set-up](testnet/avail-project/staking-set-up.md)
 
-## Monitoring
+## Monitoring & Alerting
 
-* [Install Monitoring Stack](monitoring/monitoring-stack.md)
+* [Install Monitoring Stack](monitoring-and-alerting/monitoring-stack.md)
+* [Alerting](monitoring-and-alerting/alerting/README.md)
+  * [Submit Result Block Covalent Rudder](monitoring-and-alerting/alerting/submit-result-block-covalent-rudder.md)
 
 ## Troubleshooting
 
