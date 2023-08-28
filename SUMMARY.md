@@ -46,6 +46,11 @@
   * [Covalent Rudder: Submit Result Block with API KEY](monitoring-and-alerting/alerting/covalent-rudder-submit-result-block-with-api-key.md)
   * [Covalent Rudder: Submit Result Block with LOG](monitoring-and-alerting/alerting/covalent-rudder-submit-result-block-with-log.md)
   * [Erbie Chain Uptime](monitoring-and-alerting/alerting/erbie-chain-uptime.md)
+  * [Cosmos Alerting](monitoring-and-alerting/alerting/cosmos-alerting/README.md)
+    * [Kuma Environment](monitoring-and-alerting/alerting/cosmos-alerting/kuma-environment.md)
+    * [Check Active](monitoring-and-alerting/alerting/cosmos-alerting/check-active.md)
+    * [Check Jail](monitoring-and-alerting/alerting/cosmos-alerting/check-jail.md)
+    * [Check Sync](monitoring-and-alerting/alerting/cosmos-alerting/check-sync.md)
 
 ## Troubleshooting
 
