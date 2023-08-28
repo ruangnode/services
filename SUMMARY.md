@@ -51,6 +51,7 @@
     * [Check Active](monitoring-and-alerting/alerting/cosmos-alerting/check-active.md)
     * [Check Jail](monitoring-and-alerting/alerting/cosmos-alerting/check-jail.md)
     * [Check Sync](monitoring-and-alerting/alerting/cosmos-alerting/check-sync.md)
+  * [Cron](monitoring-and-alerting/alerting/cron.md)
 
 ## Troubleshooting
 
