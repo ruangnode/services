@@ -1,4 +1,8 @@
-# Covalent Rudder: Submit Result Block
+# Covalent Rudder: Submit Result Block with API KEY
+
+{% hint style="info" %}
+First, make sure you have installed Kuma Uptime on your server. You can see how to do it [here](../monitoring-stack/uptime-kuma.md).
+{% endhint %}
 
 ```python
 import requests
@@ -71,3 +75,4 @@ if __name__ == "__main__":
         check_status()
         time.sleep(60)  # Wait for 1 minute before checking again
 ```
+

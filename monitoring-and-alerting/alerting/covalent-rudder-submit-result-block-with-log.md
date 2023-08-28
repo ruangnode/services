@@ -1,5 +1,9 @@
 # Covalent Rudder: Submit Result Block with LOG
 
+{% hint style="info" %}
+First, make sure you have installed Kuma Uptime on your server. You can see how to do it [here](../monitoring-stack/uptime-kuma.md).
+{% endhint %}
+
 ```sh
 #!/bin/bash
 
@@ -46,3 +50,4 @@ else
     fi
 fi
 ```
+
