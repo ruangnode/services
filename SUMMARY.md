@@ -43,7 +43,9 @@
   * [Grafana & Prometheus](monitoring-and-alerting/monitoring-stack/grafana-and-prometheus.md)
   * [Uptime Kuma](monitoring-and-alerting/monitoring-stack/uptime-kuma.md)
 * [Alerting](monitoring-and-alerting/alerting/README.md)
-  * [Covalent Rudder: Submit Result Block](monitoring-and-alerting/alerting/covalent-rudder-submit-result-block.md)
+  * [Covalent Rudder: Submit Result Block with API KEY](monitoring-and-alerting/alerting/covalent-rudder-submit-result-block-with-api-key.md)
+  * [Covalent Rudder: Submit Result Block with LOG](monitoring-and-alerting/alerting/covalent-rudder-submit-result-block-with-log.md)
+  * [Erbie Chain Uptime](monitoring-and-alerting/alerting/erbie-chain-uptime.md)
 
 ## Troubleshooting
 
