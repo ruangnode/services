@@ -1,6 +1,8 @@
 # 👋 Ruangnode!
 
-![ruangnode](https://komarev.com/ghpvc/?username=ruangnode\&label=Profile%20views\&color=0e75b6\&style=flat)
+<figure><img src=".gitbook/assets/logo.png" alt="" width="94"><figcaption><p>ruangnode</p></figcaption></figure>
+
+![](https://komarev.com/ghpvc/?username=ruangnode\&label=Profile%20views\&color=0e75b6\&style=flat)
 
 * My website [https://ruangnode.com](https://ruangnode.com)
 * Medium [https://ruangnode.medium.com](https://ruangnode.medium.com/)
