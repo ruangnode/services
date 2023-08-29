@@ -9,7 +9,6 @@ First, make sure you have installed Kuma Uptime on your server. You can see how 
 
 # Environment Variables
 HOST="https://monitor.ruangnode.com/api/push/xxxxxx"
-TOKEN="your_token"
 STATUS_UP="up"
 STATUS_DOWN="down"
 MSG_UP="Network peer count is greater than 0"
