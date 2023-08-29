@@ -1,5 +1,15 @@
 # Grafana & Prometheus
 
+<div>
+
+<figure><img src="../../.gitbook/assets/grafana.jpg" alt="" width="100"><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/prometheus (2).png" alt="" width="65"><figcaption></figcaption></figure>
+
+</div>
+
 ```sh
 #!/bin/bash
 PROMETHEUS_CHECKSUM="3f558531c6a575d8372b576b7e76578a98e2744da6b89982ea7021b6f000cddd"
@@ -160,7 +170,5 @@ else
    echo "Make sure your OS is Ubuntu"
 fi  
 ```
-
-
 
 > Reference RoomIT : [https://docs.roomit.xyz](https://docs.roomit.xyz/)
