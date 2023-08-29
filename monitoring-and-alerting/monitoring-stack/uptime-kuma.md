@@ -1,5 +1,7 @@
 # Uptime Kuma
 
+<figure><img src="../../.gitbook/assets/icon.svg" alt="" width="160"><figcaption></figcaption></figure>
+
 Please create file docker-compose.yml
 
 ```

@@ -1,5 +1,7 @@
 # Covalent
 
+<figure><img src="../../.gitbook/assets/project5.jpg" alt="" width="100"><figcaption></figcaption></figure>
+
 #### Hardware Requirements <a href="#hardware-requirements" id="hardware-requirements"></a>
 
 **Minimum**

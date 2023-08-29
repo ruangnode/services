@@ -1,5 +1,7 @@
 # Opside
 
+<figure><img src="../../.gitbook/assets/project6.jpg" alt="" width="87"><figcaption></figcaption></figure>
+
 ## **Requirements**
 
 ### Hardware

@@ -4,6 +4,8 @@ description: Run with docker
 
 # Taiko
 
+<figure><img src="../../.gitbook/assets/project1.jpg" alt="" width="100"><figcaption></figcaption></figure>
+
 ## Run a Taiko node
 
 ### Overview

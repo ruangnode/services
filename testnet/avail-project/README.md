@@ -1,5 +1,7 @@
 # Avail Project
 
+<figure><img src="../../.gitbook/assets/project8.png" alt="" width="72"><figcaption></figcaption></figure>
+
 ### Before you start[​](https://availproject.github.io/join-the-network/run-avail/full-node-setup#before-you-start) <a href="#before-you-start" id="before-you-start"></a>
 
 The instructions below assume a Linux distribution with `apt` (Debian, for example), but you may be able to adapt them to a different distribution. It's also common for users to run nodes on a cloud server. The following list of standard hardware is a recommendation of hardware specs that your environment should have:

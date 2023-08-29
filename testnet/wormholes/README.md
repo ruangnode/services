@@ -2,7 +2,9 @@
 description: Run with docker
 ---
 
-# Wormholes
+# Erbie
+
+<figure><img src="../../.gitbook/assets/project2.png" alt="" width="100"><figcaption></figcaption></figure>
 
 **Minimum requirements**
 
