@@ -57,3 +57,10 @@
 
 * [Abuse NetscanOutLevel: Netscan detected Issues in Server](troubleshooting/abuse-netscanoutlevel-netscan-detected-issues-in-server.md)
 * [EVM Wallet by PrivateKey](troubleshooting/evm-wallet-by-privatekey.md)
+
+***
+
+* [LVM setup partition](lvm-setup-partition/README.md)
+  * [LVM: The Powerful Tool for Managing Storage on Linux Systems](lvm-setup-partition/lvm-the-powerful-tool-for-managing-storage-on-linux-systems.md)
+  * [Resize disk](lvm-setup-partition/resize-disk.md)
+  * [Created new disk using GParted](lvm-setup-partition/created-new-disk-using-gparted.md)
