@@ -4,12 +4,9 @@ To configure Docker to use a custom daemon.json file for mounting volumes and ot
 
 1. **Create or Locate Your Custom daemon.json File**:
    * You can create a custom `daemon.json` file or locate an existing one. This file will contain your Docker daemon configuration options.
-2.  **Edit or Create daemon.json**:
-
-    * Open the `daemon.json` file using a text editor. If the file doesn't exist, you can create it. The typical location for this file is `/etc/docker/daemon.json` on Linux systems.
-    * Here is an example of what the `daemon.json` file might look like:
-
-
+2. **Edit or Create daemon.json**:
+   * Open the `daemon.json` file using a text editor. If the file doesn't exist, you can create it. The typical location for this file is `/etc/docker/daemon.json` on Linux systems.
+   * Here is an example of what the `daemon.json` file might look like:
 
 ```bash
 {
