@@ -63,3 +63,4 @@
 * [LVM setup partition](lvm-setup-partition/README.md)
   * [LVM: The Powerful Tool for Managing Storage on Linux Systems](lvm-setup-partition/lvm-the-powerful-tool-for-managing-storage-on-linux-systems.md)
   * [Basic command LVM](lvm-setup-partition/basic-command-lvm.md)
+  * [Docker mounting](lvm-setup-partition/docker-mounting.md)
