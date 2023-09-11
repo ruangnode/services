@@ -66,3 +66,34 @@ LV vg0 data_docker     /data/docker     xfs     50G
 ```
 
 After completing the steps, perform a server reboot, and your Logical Volume Management (LVM) setup should be successfully created.\
+
+
+Result :&#x20;
+
+```bash
+$ lsblk
+
+NAME                   MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINTS
+nvme0n1                259:0    0 476.9G  0 disk
+├─nvme0n1p1            259:2    0     1G  0 part
+│ └─md0                  9:0    0  1022M  0 raid1 /boot
+└─nvme0n1p2            259:3    0 475.9G  0 part
+  └─md1                  9:1    0 951.6G  0 raid0
+    ├─vg0-root         253:0    0    40G  0 lvm   /
+    ├─vg0-swap         253:1    0     4G  0 lvm   [SWAP]
+    ├─vg0-home         253:2    0    10G  0 lvm   /home
+    ├─vg0-app_testnet  253:3    0    30G  0 lvm   /app/testnet
+    ├─vg0-data_testnet 253:4    0   500G  0 lvm   /data/testnet
+    └─vg0-data_docker  253:5    0   100G  0 lvm   /data/docker
+nvme1n1                259:1    0 476.9G  0 disk
+├─nvme1n1p1            259:4    0     1G  0 part
+│ └─md0                  9:0    0  1022M  0 raid1 /boot
+└─nvme1n1p2            259:5    0 475.9G  0 part
+  └─md1                  9:1    0 951.6G  0 raid0
+    ├─vg0-root         253:0    0    40G  0 lvm   /
+    ├─vg0-swap         253:1    0     4G  0 lvm   [SWAP]
+    ├─vg0-home         253:2    0    10G  0 lvm   /home
+    ├─vg0-app_testnet  253:3    0    30G  0 lvm   /app/testnet
+    ├─vg0-data_testnet 253:4    0   500G  0 lvm   /data/testnet
+    └─vg0-data_docker  253:5    0   100G  0 lvm   /data/docker
+```
