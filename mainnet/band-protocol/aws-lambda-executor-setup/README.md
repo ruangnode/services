@@ -8,7 +8,7 @@ Yoda uses an external executor to resolve requests to data sources. Currently, i
 
 In your AWS account, go to [AWS Lambda Page](https://ap-southeast-1.console.aws.amazon.com/lambda/home?region=ap-southeast-1#/functions) and click **Create function**.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Follow the following steps:
 
@@ -17,7 +17,7 @@ Follow the following steps:
 * Set **Runtime** to `Python 3.7`
 * For **permission**, if you don't have an existing role, create a new one.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Click **Create function**. Once everything is complete, You will see this page.
 
