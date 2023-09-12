@@ -1,12 +1,8 @@
 # Installation Validator
 
-**Chain ID**: self-dev-1 | **Latest Binary Version**: v0.2.2
-
-> <mark style="color:blue;background-color:blue;">Replace</mark> <mark style="color:blue;background-color:blue;"></mark><mark style="color:blue;background-color:blue;">**YOUR\_MONIKER\_GOES\_HERE**</mark> <mark style="color:blue;background-color:blue;"></mark><mark style="color:blue;background-color:blue;">with your validator name</mark>
-
-```
-MONIKER="YOUR_MONIKER_GOES_HERE"
-```
+| Chain ID   | Latest Version Tag	 | Custom Port |
+| ---------- | ------------------- | ----------- |
+| self-dev-1 | 0.2.2               | 113         |
 
 Update and install packages for compiling
 
@@ -33,7 +29,11 @@ or
 sudo su - admin
 ```
 
-and make sure we are in directory
+> <mark style="color:blue;background-color:blue;">Replace</mark> <mark style="color:blue;background-color:blue;"></mark><mark style="color:blue;background-color:blue;">**YOUR\_MONIKER\_GOES\_HERE**</mark> <mark style="color:blue;background-color:blue;"></mark><mark style="color:blue;background-color:blue;">with your validator name</mark>
+
+```
+MONIKER="YOUR_MONIKER_GOES_HERE"
+```
 
 ```bash
 pwd
@@ -44,19 +44,6 @@ pwd
 {% hint style="info" %}
 **Running in user** : admin
 {% endhint %}
-
-#### FHS of Band
-
-Create FHS for application
-
-```bash
-echo "Install FHS"
-mkdir -p ${HOME}/tmp
-mkdir -p ${HOME}/lib
-mkdir -p ${HOME}/bin
-mkdir -p ${HOME}/conf
-mkdir -p ${HOME}/systemd
-```
 
 ### Install Golang
 
@@ -75,7 +62,7 @@ go version
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.5.0
 ```
 
-#### Install Band
+#### Install Cosmovisor and service
 
 ```bash
 # Download and install binary
@@ -91,21 +78,46 @@ mv selfchaind $HOME/.selfchain/cosmovisor/genesis/bin/
 sudo ln -s $HOME/.selfchain/cosmovisor/genesis $HOME/.selfchain/cosmovisor/current
 sudo ln -s $HOME/.selfchain/cosmovisor/current/bin/selfchaind /usr/local/bin/selfchaind
 
+# Set Service file
+sudo tee /etc/systemd/system/selfchaind.service > /dev/null << EOF
+[Unit]
+Description=selfchaind testnet node service
+After=network-online.target
 
-# Set Configuration for your node
+[Service]
+User=$USER
+ExecStart=$(which cosmovisor) run start
+Restart=on-failure
+RestartSec=10
+LimitNOFILE=65535
+Environment="DAEMON_HOME=$HOME/.selfchain"
+Environment="DAEMON_NAME=selfchaind"
+Environment="UNSAFE_SKIP_BACKUP=true"
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+sudo systemctl daemon-reload
+sudo systemctl enable selfchaind
+```
+
+#### Initialize the node <a href="#initialize-the-node" id="initialize-the-node"></a>
+
+```bash
+# Set node configuration
 selfchaind config chain-id self-dev-1
 selfchaind config keyring-backend test
 nolusd config node tcp://localhost:11357
 
 
-# Init your node
-# You can change "MyNode" to anything you like
-selfchaind init $MONIEKR --chain-id self-dev-1
+# Initialize the node
+selfchaind init $MONIKER--chain-id self-dev-1
 
 
 # Add Genesis File and Addrbook
 wget -O $HOME/.selfchain/config/genesis.json  https://raw.githubusercontent.com/hotcrosscom/selfchain-genesis/main/networks/devnet/genesis.json
-curl -Ls https://snapshots.indonode.net/selfchain/addrbook.json > $HOME/.selfchain/config/addrbook.json
+wget -O $HOME/.selfchain/config/addrbook.json  https://raw.githubusercontent.com/ruangnode/services/main/testnet/self-chain/addrbook.json
 
 #Configure Seeds and Peers
 SEEDS="94a7baabb2bcc00c7b47cbaa58adf4f433df9599@157.230.119.165:26656,d3b5b6ca39c8c62152abbeac4669816166d96831@165.22.24.236:26656,35f478c534e2d58dc2c4acdf3eb22eeb6f23357f@165.232.125.66:26656"
@@ -127,88 +139,18 @@ sed -i -e 's|^indexer *=.*|indexer = "null"|' $HOME/.selfchain/config/config.tom
 sed -i 's|^prometheus *=.*|prometheus = true|' $HOME/.selfchain/config/config.toml
 sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.005uself\"/" $HOME/.selfchain/config/app.toml
 
-# Set Service file
-sudo tee /etc/systemd/system/selfchaind.service > /dev/null << EOF
-[Unit]
-Description=selfchaind testnet node service
-After=network-online.target
+# Set custom ports
+sed -i -e "s%^proxy_app = \"tcp://127.0.0.1:26658\"%proxy_app = \"tcp://127.0.0.1:11358\"%; s%^laddr = \"tcp://127.0.0.1:26657\"%laddr = \"tcp://127.0.0.1:11357\"%; s%^pprof_laddr = \"localhost:6060\"%pprof_laddr = \"localhost:11360\"%; s%^laddr = \"tcp://0.0.0.0:26656\"%laddr = \"tcp://0.0.0.0:11356\"%; s%^prometheus_listen_addr = \":26660\"%prometheus_listen_addr = \":11366\"%" $HOME/.selfchain/config/config.toml
+sed -i -e "s%^address = \"tcp://0.0.0.0:1317\"%address = \"tcp://0.0.0.0:11317\"%; s%^address = \":8080\"%address = \":11380\"%; s%^address = \"0.0.0.0:9090\"%address = \"0.0.0.0:11390\"%; s%^address = \"0.0.0.0:9091\"%address = \"0.0.0.0:11391\"%; s%:8545%:11345%; s%:8546%:11346%; s%:6065%:11365%" $HOME/.selfchain/config/app.toml
 
-[Service]
-User=$USER
-ExecStart=$(which cosmovisor) run start
-Restart=on-failure
-RestartSec=10
-LimitNOFILE=65535
-Environment="DAEMON_HOME=$HOME/.selfchain"
-Environment="DAEMON_NAME=selfchaind"
-Environment="UNSAFE_SKIP_BACKUP=true"
+```
 
-[Install]
-WantedBy=multi-user.target
-EOF
-sudo systemctl daemon-reload
-sudo systemctl enable selfchaind
+**Start service and check the logs**
 
-
-# Start the Node
-sudo systemctl restart selfchaind
+```
+sudo systemctl start selfchaind
 sudo journalctl -fu selfchaind -o cat
 ```
 
-#### Environment
-
-{% hint style="info" %}
-direct to ${HOME}/.bashrc or ${HOME}/.profile
-{% endhint %}
-
-```
-echo 'export PATH="${PATH}:${HOME}/bin"' >> ${HOME}/.bashrc
-source ~/.bashrc
-```
-
-Set Variable
-
-```bash
-# Chain ID of Laozi Mainnet
-export CHAIN_ID=laozi-mainnet
-# Wallet name to be used as validator's account, please change this into your name (no whitespace).
-export WALLET_NAME=<YOUR_WALLET_NAME>
-# Name of your validator node, please change this into your name.
-export MONIKER=<YOUR_MONIKER>
-# URL of genesis file for Laozi Mainnet
-export GENESIS_FILE_URL=https://raw.githubusercontent.com/bandprotocol/launch/master/laozi-mainnet/genesis.json
-# Data sources/oracle scripts files
-export BIN_FILES_URL=https://raw.githubusercontent.com/bandprotocol/launch/master/laozi-mainnet/files.tar.gz
-```
-
-#### Intialize Node
-
-```bash
-bandd init --chain-id $CHAIN_ID "$MONIKER"
-```
-
-**Replace genesis file with our genesis file**
-
-```bash
-wget $GENESIS_FILE_URL -O $HOME/.band/config/genesis.json
-```
-
-**Download data sources / oracle scripts files, and store in $HOME/.band/files**
-
-```bash
-wget -qO- $BIN_FILES_URL | tar xvz -C $HOME/.band/
-```
-
-**Create new account**
-
-```bash
-bandd keys add $WALLET_NAME
-```
-
-Validate Genesis
-
-```
-bandd validate-genesis
-```
-
-Edit config, You can refer to [Edit Configuration](../../mainnet/band-protocol/edit-configuration.md)
+\
+\

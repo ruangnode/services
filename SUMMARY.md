@@ -38,12 +38,9 @@
   * [Staking Set-up](testnet/avail-project/staking-set-up.md)
 * [Self Chain](testnet/self-chain/README.md)
   * [Installation Validator](testnet/self-chain/installation-validator.md)
-  * [Up and Running](testnet/self-chain/up-and-running.md)
   * [Edit Configuration](testnet/self-chain/edit-configuration.md)
   * [Command Band](testnet/self-chain/command-band.md)
   * [Endpoint Public](testnet/self-chain/endpoint-public.md)
-  * [AWS lambda executor setup](testnet/self-chain/aws-lambda-executor-setup/README.md)
-    * [Set the yoda configurations](testnet/self-chain/aws-lambda-executor-setup/set-the-yoda-configurations.md)
 
 ## Monitoring & Alerting
 

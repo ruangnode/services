@@ -1,6 +1,6 @@
 # Self Chain
 
-<figure><img src="../../.gitbook/assets/project7.jpg" alt="" width="100"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/project13 (1).jpg" alt="" width="100"><figcaption></figcaption></figure>
 
 ## Hardware requirements
 
