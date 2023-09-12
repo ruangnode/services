@@ -108,7 +108,7 @@ sudo systemctl enable selfchaind
 # Set node configuration
 selfchaind config chain-id self-dev-1
 selfchaind config keyring-backend test
-nolusd config node tcp://localhost:11357
+selfchaind config node tcp://localhost:11357
 
 
 # Initialize the node
