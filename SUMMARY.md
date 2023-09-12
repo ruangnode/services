@@ -38,7 +38,6 @@
   * [Staking Set-up](testnet/avail-project/staking-set-up.md)
 * [Self Chain](testnet/self-chain/README.md)
   * [Installation Validator](testnet/self-chain/installation-validator.md)
-  * [Edit Configuration](testnet/self-chain/edit-configuration.md)
   * [Command Band](testnet/self-chain/command-band.md)
   * [Endpoint Public](testnet/self-chain/endpoint-public.md)
 

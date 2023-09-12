@@ -27,7 +27,7 @@ Install jq package for management json format
 #### **Add New Key**
 
 ```bash
-bandd keys add mywallet --home ${HOME}/.band     
+selfchaind keys add mywallet --home ${HOME}/.band     
 ```
 
 #### **Recover Key**
@@ -35,42 +35,42 @@ bandd keys add mywallet --home ${HOME}/.band
 With Passphrase
 
 ```bash
-bandd keys add mywallet --recover  --home ${HOME}/.band           
+selfchaind keys add mywallet --recover  --home ${HOME}/.band           
 ```
 
 With Keyring
 
 ```bash
-bandd keys add mywallet --recover --keyring-backend os --home ${HOME}/.band           
+selfchaind keys add mywallet --recover --keyring-backend os --home ${HOME}/.band           
 ```
 
 #### **List Key**
 
 ```bash
-bandd keys list --home ${HOME}/.band        
+selfchaind keys list --home ${HOME}/.band        
 ```
 
 #### **Delete Key**
 
 ```bash
-bandd keys delete mywallet --home ${HOME}/.band 
+selfchaind keys delete mywallet --home ${HOME}/.band 
 ```
 
 **Export Key**
 
 ```bash
- bandd keys export mywallet --home ${HOME}/.band 
+ selfchaind keys export mywallet --home ${HOME}/.band 
 ```
 
 #### Import Key
 
 ```
-bandd keys import mywallet mywallet_file.backup --home ${HOME}/.band
+selfchaind keys import mywallet mywallet_file.backup --home ${HOME}/.band
 ```
 
 #### Show All Balances Address
 
-<pre class="language-bash"><code class="lang-bash"><strong>for mywallet in `bandd keys list --home ${HOME}/.band--output json| jq -r ".[] .address"`
+<pre class="language-bash"><code class="lang-bash"><strong>for wallet in `selfchaind keys list --home ${HOME}/.band--output json| jq -r ".[] .address"`
 </strong>do
    CHAIN_ID="gitopia"
    RPC="tcp://localhost:16700"
@@ -81,7 +81,7 @@ done
 #### Show Balance Address
 
 ```bash
-bandd q bank balances mywallet_public_address --home ${HOME}/.band--chain-id laozi-mainnet --node tcp://localhost:16700
+selfchaind q bank balances mywallet_public_address --home ${HOME}/.band--chain-id laozi-mainnet --node tcp://localhost:16700
 ```
 
 ### Validator Management
@@ -114,12 +114,12 @@ WEBSITE="https://yourwebsite.com"
 
 bandd tx staking create-validator \
 --amount=1000000uband \
---pubkey=$(bandd tendermint show-validator --home ${HOME}/.band) \
+--pubkey=$(selfchaind tendermint show-validator --home ${HOME}/.selfchain) \
 --moniker="${MONIKER}" \
 --identity="${PROFILE}" \
 --details="${DETAILS}" \
 --website="${WEBSITE}" \
---chain-id=laozi-mainnet \
+--chain-id=self-dev-1 \
 --commission-rate=0.05 \
 --commission-max-rate=0.20 \
 --commission-max-change-rate=0.01 \
@@ -127,7 +127,7 @@ bandd tx staking create-validator \
 --from=mywallet \
 --gas-adjustment=1.4 \
 --gas=auto \
---node tcp://localhost:16700 \
+--node tcp://localhost:11357 \
 --home ${HOME}/.band\
 -y
 ```
@@ -145,12 +145,12 @@ bandd tx staking edit-validator \
 --identity="${PROFILE}" \
 --details="${DETAILS}" \
 --website="${WEBSITE}" \
---chain-id=laozi-mainnet \
+--chain-id=self-dev-1 \
 --commission-rate=0.05 \
 --from=mywallet \
 --gas-adjustment=1.4 \
 --gas=auto \
---node tcp://localhost:16700 \
+--node tcp://localhost:11357\
 --home ${HOME}/.band\
 -y
 ```
@@ -158,35 +158,35 @@ bandd tx staking edit-validator \
 #### Get Validator Info
 
 ```
-bandd status 2>&1 | jq .ValidatorInfo
+selfchaind status 2>&1 | jq .ValidatorInfo
 ```
 
 #### Get Syncing Block
 
 ```
-bandd status 2>&1 | jq .SyncInfo
+selfchaind status 2>&1 | jq .SyncInfo
 ```
 
 #### Get Peer Own Node
 
 ```bash
-echo $(bandd tendermint show-node-id)'@'$(curl -s ifconfig.me)':'$(cat $HOME/.band/config/config.toml | sed -n '/Address to listen for incoming connection/{n;p;}' | sed 's/.*://; s/".*//')
+echo $(selfchaind tendermint show-node-id)'@'$(curl -s ifconfig.me)':'$(cat $HOME/.band/config/config.toml | sed -n '/Address to listen for incoming connection/{n;p;}' | sed 's/.*://; s/".*//')
 ```
 
 #### Get Peer Node
 
 ```
-curl -sS http://localhost:16700/net_info | jq -r '.result.peers[] | "\(.node_info.id)@\(.remote_ip):\(.node_info.listen_addr)"' | awk -F ':' '{print $1":"$(NF)}'
+curl -sS http://localhost:11357/net_info | jq -r '.result.peers[] | "\(.node_info.id)@\(.remote_ip):\(.node_info.listen_addr)"' | awk -F ':' '{print $1":"$(NF)}'
 ```
 
 #### Unjail Validator
 
 ```bash
-bandd tx slashing unjail \
+selfchaind tx slashing unjail \
 --from mywallet \
---chain-id laozi-mainnet \
+--chain-id self-dev-1 \
  --home ${HOME}/.band\
- --node  tcp://localhost:16700 \
+ --node  tcp://localhost:11357\
  --gas auto \
  --gas-adjustment 1.4 \
  -y
@@ -194,34 +194,33 @@ bandd tx slashing unjail \
 
 #### Jail Reason
 
-```bash
-bandd query slashing signing-info $(bandd tendermint show-validator) \
- --node  tcp://localhost:16700 \
- --home ${HOME}/.band
-```
+<pre class="language-bash"><code class="lang-bash"><strong>selfchaind query slashing signing-info $(selfchaind tendermint show-validator) \
+</strong> --node  tcp://localhost:11357\
+ --home ${HOME}/.selfchain
+</code></pre>
 
 #### List All Active Validator
 
 ```bash
-bandd q staking validators -oj --limit=3000 | jq '.validators[] | select(.status=="BOND_STATUS_BONDED")' | jq -r '(.tokens|tonumber/pow(10; 6)|floor|tostring) + " \t " + .description.moniker' | sort -gr | nl
+selfchaind q staking validators -oj --limit=3000 | jq '.validators[] | select(.status=="BOND_STATUS_BONDED")' | jq -r '(.tokens|tonumber/pow(10; 6)|floor|tostring) + " \t " + .description.moniker' | sort -gr | nl
 ```
 
 #### List All Inactive Validator
 
 ```bash
-bandd q staking validators -oj --limit=3000 | jq '.validators[] | select(.status=="BOND_STATUS_UNBONDED")' | jq -r '(.tokens|tonumber/pow(10; 6)|floor|tostring) + " \t " + .description.moniker' | sort -gr | nl
+selfchaind q staking validators -oj --limit=3000 | jq '.validators[] | select(.status=="BOND_STATUS_UNBONDED")' | jq -r '(.tokens|tonumber/pow(10; 6)|floor|tostring) + " \t " + .description.moniker' | sort -gr | nl
 ```
 
 #### Show Validator Details
 
 ```
-bandd \
+selfchaind \
 query staking validator \
-$(bandd keys show \ 
-                $(bandd keys list --home ${HOME}/.band--output json| jq -r ".[] .address" | tail -n1) \
+$(selfchaind keys show \ 
+                $(selfchaind keys list --home ${HOME}/.selfchain --output json| jq -r ".[] .address" | tail -n1) \
 --bech val -a) \
---chain-id laozi-mainnet \
---node tcp://localhost:16700
+--chain-id self-dev \
+--node tcp://localhost:11357
 ```
 
 ### Token Management
@@ -229,11 +228,11 @@ $(bandd keys show \
 #### Withdraw All Reward From Validator
 
 ```bash
-bandd tx distribution withdraw-all-rewards \
---from mywallet \
---chain-id laozi-mainnet \
---node tcp://localhost:16700 \
---home ${HOME}/.band\
+selfchaind tx distribution withdraw-all-rewards \
+--from wallet \
+--chain-id self-dev-1 \
+--node tcp://localhost:11357 \
+--home ${HOME}/.selfchain \
 --gas-adjustment 1.4 \
 --gas auto \
 -y
@@ -242,26 +241,26 @@ bandd tx distribution withdraw-all-rewards \
 #### Withdraw Commision Reward From Validator
 
 ```bash
-bandd tx distribution withdraw-rewards $(bandd keys show mywallet --bech val -a) \
+selfchaind tx distribution withdraw-rewards $(selfchaind keys show wallet --bech val -a) \
 --commission \
---from mywallet \
+--from wallet \
 --gas-adjustment 1.4 \
 --gas auto \
---chain-id laozi-mainnet \
---node tcp://localhost:16700 \
---home ${HOME}/.band\
+--chain-id self-dev-1 \
+--node tcp://localhost:11357 \
+--home ${HOME}/.selfchain \
 -y 
 ```
 
 #### Delegate My Token to Own Validator
 
 ```bash
-bandd tx staking delegate $(bandd keys show wallet --bech val -a) 1000000uband \
---from mywallet \
+selfchaind tx staking delegate $(selfchaind keys show wallet --bech val -a) 1000000uself \
+--from wallet \
 --gas-adjustment 1.4 \
---home ${HOME}/.band\
---node tcp://localhost:16700 \
---chain-id laozi-mainnet \
+--home ${HOME}/.selfchain \
+--node tcp://localhost:11357 \
+--chain-id self-dev-1 \
 --gas auto \
 -y
 ```
@@ -269,13 +268,13 @@ bandd tx staking delegate $(bandd keys show wallet --bech val -a) 1000000uband \
 #### Delegate Your Token To Our Validator
 
 ```bash
-bandd tx staking delegate gravityvaloper1ssduj8c0cc8kquljvw3ygq9hduvcysnf590lmz 1000000uband \ 
---from mywallet \
+selfchaind tx staking delegate gravityvaloper1ssduj8c0cc8kquljvw3ygq9hduvcysnf590lmz 1000000uself \ 
+--from wallet \
 --gas-adjustment 1.4 \ 
 --gas auto \
---home ${HOME}/.band\
---node tcp://localhost:16700 \
---chain-id laozi-mainnet \
+--home ${HOME}/.selfchain \
+--node tcp://localhost:11357 \
+--chain-id self-dev-1 \
 -y
 ```
 
