@@ -10,13 +10,13 @@ To configure Docker to use a custom daemon.json file for mounting volumes and ot
 
 ```bash
 {
-  "data-root": "/docker/data", //you can modify this data-root directory
-  "storage-driver": "overlay2",
+  "data-root": "/data/docker",
   "log-driver": "json-file",
   "log-opts": {
-    "max-size": "10m",
-    "max-file": "3"
-  }
+  "max-size": "10m",
+  "max-file": "3"
+},
+  "dns": ["8.8.8.8", "1.1.1.1"]
 }
 
 ```
