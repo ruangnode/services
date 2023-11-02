@@ -74,7 +74,7 @@ cd avail-node
 ```
 
 ```sh
-wget https://github.com/availproject/avail/releases/download/v1.6.2-rc1/data-avail-linux-amd64.tar.gz
+wget https://github.com/availproject/avail/releases/download/v1.7.2/data-avail-linux-amd64.tar.gz
 ```
 
 ```
