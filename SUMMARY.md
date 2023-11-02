@@ -40,6 +40,11 @@
   * [Installation Validator](testnet/self-chain/installation-validator.md)
   * [Command Band](testnet/self-chain/command-band.md)
   * [Endpoint Public](testnet/self-chain/endpoint-public.md)
+* [Namada](testnet/namada/README.md)
+  * [Installation](testnet/namada/installation.md)
+  * [Upgrade](testnet/namada/upgrade.md)
+  * [Snapshoot](testnet/namada/snapshoot.md)
+  * [Commands](testnet/namada/commands.md)
 
 ## Monitoring & Alerting
 
