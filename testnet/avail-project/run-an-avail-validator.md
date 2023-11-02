@@ -119,6 +119,32 @@ WantedBy=multi-user.target
 EOF
 ```
 
+{% hint style="info" %}
+please use the second one if **chainspec.raw.json** is not available.
+{% endhint %}
+
+```
+export USERNAME=$(whoami)
+cat > ${HOME}/avail-node/systemd/availd.service  <<EOF
+
+[Unit]
+Description=Avail Validator
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+User=$USERNAME
+Type=simple
+Restart=always
+RestartSec=120
+ExecStart=${HOME}/avail-node/data-avail --base-path ${HOME}/avail-node/data --chain kate --port 30333 --validator --name "YOUR_NAME_VALIDATOR"
+
+[Install]
+WantedBy=multi-user.target
+
+EOF
+```
+
 Linking to Systemd
 
 ```bash
