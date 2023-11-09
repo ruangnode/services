@@ -2,7 +2,11 @@
 description: Data Availability Deployments
 ---
 
-# Run an Avail Validator
+# Run an Avail Validator Kate Full Node
+
+| Chain ID | Latest Version Tag |
+| -------- | ------------------ |
+| kate     | v.1.7.2            |
 
 {% hint style="info" %}
 ONBOARDING VALIDATORS
