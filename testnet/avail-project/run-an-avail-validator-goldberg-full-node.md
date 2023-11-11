@@ -84,7 +84,7 @@ wget https://github.com/availproject/avail/releases/download/v1.8.0.0/amd64-ubun
 **Extract File**
 
 ```
-tar -xvzf data-avail-linux-amd64.tar.gz
+tar -xvzf amd64-ubuntu-2204-data-avail.tar.gz
 ```
 
 ```
