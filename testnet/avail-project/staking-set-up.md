@@ -9,7 +9,7 @@ We recommend creating two accounts, `stash` and `controller`, each with their ow
 * The controller key is used to control staking actions and submitting transactions (paying for transaction fees).
 * The stash key is used to control most of your funds. It is recommended that the stash key be a cold wallet or offline and not be used for account-related activities like submitting extrinsics.
 
-You can create the two accounts via the Explorer interface. The Kate network explorer is at [kate.avail.tools](https://kate.avail.tools/), for other networks refer to the [Avail Networks](https://availproject.github.io/join-the-network/networks) page.
+You can create the two accounts via the Explorer interface. The Kate network explorer is at [https://goldberg.avail.tools/#/accounts](https://goldberg.avail.tools/#/accounts), for other networks refer to the [Avail Networks](https://availproject.github.io/join-the-network/networks) page.
 
 Once you have created the accounts, Ensure each account has enough funds to pay the fees for making transactions. For validators participating in our testnet, contact the Avail team to have funds transferred.
 
@@ -30,7 +30,7 @@ It is now time to set up your validator by doing the following:
 * Bond the AVL of the Stash account. These token will be put at stake for the security of the network and subject to slashing.
 * Select the Controller. This is the account that will decide when to start or stop validating.
 
-First, go to the accounts section on the **Staking** tab in the Explorer at [kate.avail.tools](https://kate.avail.tools/#/staking/actions) for the Kate network (for other networks refer to the [Avail Networks](https://availproject.github.io/join-the-network/networks) page). Here, you can perform various staking actions. Click on Stash.
+First, go to the accounts section on the **Staking** tab in the Explorer at [https://goldberg.avail.tools](https://goldberg.avail.tools/#/accounts) for the Kate network (for other networks refer to the [Avail Networks](https://availproject.github.io/join-the-network/networks) page). Here, you can perform various staking actions. Click on Stash.
 
 <figure><img src="https://availproject.github.io/img/avail/staking-bond-1.png" alt=""><figcaption></figcaption></figure>
 
@@ -64,7 +64,7 @@ Once your node is **fully synced**, you need to rotate and submit your session k
 Run this command on the machine where you are running your Avail validator node (while the node is running with the default HTTP RPC port configured):
 
 ```
-curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9933
+curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "author_rotateKeys", "params":[]}' http://localhost:9944
 ```
 
 The output will have a hex-encoded "result" field. The result is the concatenation of the four public keys. Save this result for a later step.
