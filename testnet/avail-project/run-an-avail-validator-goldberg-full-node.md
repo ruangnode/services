@@ -88,7 +88,7 @@ tar -xvzf data-avail-linux-amd64.tar.gz
 ```
 
 ```
-cp data-avail-linux-amd64 data-avail
+cp amd64-ubuntu-2204-data-avail data-avail
 ```
 
 **Create Systemd**
