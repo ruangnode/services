@@ -46,6 +46,8 @@
   * [Upgrade](testnet/namada/upgrade.md)
   * [Snapshoot](testnet/namada/snapshoot.md)
   * [Commands](testnet/namada/commands.md)
+* [Tangle](testnet/tangle/README.md)
+  * [Full node setup](testnet/tangle/full-node-setup.md)
 
 ## Monitoring & Alerting
 
