@@ -48,6 +48,7 @@
   * [Commands](testnet/namada/commands.md)
 * [Tangle](testnet/tangle/README.md)
   * [Full node setup](testnet/tangle/full-node-setup.md)
+  * [Start validating](testnet/tangle/start-validating.md)
 
 ## Monitoring & Alerting
 
