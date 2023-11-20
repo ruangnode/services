@@ -50,6 +50,11 @@
   * [Full node setup](testnet/tangle/full-node-setup.md)
   * [Start validating](testnet/tangle/start-validating.md)
 
+***
+
+* [Developer Toolkit](developer-toolkit/README.md)
+  * [Aleo developer Toolkit via Gitbash](developer-toolkit/aleo-developer-toolkit-via-gitbash.md)
+
 ## Monitoring & Alerting
 
 * [Install Monitoring Stack](monitoring/monitoring-stack.md)

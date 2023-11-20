@@ -37,11 +37,11 @@ GROUP BY
 
 * Go to [Increment](https://www.covalenthq.com/platform/increment/?utm\_source=notion\&utm\_medium=increment-link\&utm\_campaign=refiner-testnet#/) and select ‘<mark style="color:red;">`Type SQL. Get Charts`</mark>’ click number  3. From here, paste in the above query and filter using your Operator address.
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Click <mark style="color:red;">`'On start with and empty query ->'`</mark>
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Copy and paste quesry on above
 
@@ -49,13 +49,13 @@ GROUP BY
 Don't forget to change `tx_sender` and modify the `- INTERVAL`
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Run Query and go to New Chart
 
-<figure><img src="../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```
 WITH proofs_per_operator AS (
@@ -106,4 +106,4 @@ ORDER BY
 
 ```
 
-<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
