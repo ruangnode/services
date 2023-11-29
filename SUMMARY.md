@@ -17,6 +17,10 @@
   * [Endpoint Public](mainnet/band-protocol/endpoint-public.md)
   * [AWS lambda executor setup](mainnet/band-protocol/aws-lambda-executor-setup/README.md)
     * [Set the yoda configurations](mainnet/band-protocol/aws-lambda-executor-setup/set-the-yoda-configurations.md)
+* [SixSigma](mainnet/sixsigma/README.md)
+  * [Install Validator](mainnet/sixsigma/install-validator.md)
+  * [Edit Configuration](mainnet/sixsigma/edit-configuration.md)
+  * [Edit Configuration](mainnet/sixsigma/edit-configuration-1.md)
 
 ## Testnet
 
