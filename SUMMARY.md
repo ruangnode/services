@@ -20,7 +20,6 @@
 * [SixSigma](mainnet/sixsigma/README.md)
   * [Install Validator](mainnet/sixsigma/install-validator.md)
   * [Edit Configuration](mainnet/sixsigma/edit-configuration.md)
-  * [Edit Configuration](mainnet/sixsigma/edit-configuration-1.md)
 
 ## Testnet
 
