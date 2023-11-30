@@ -26,7 +26,7 @@ modify file <a data-footnote-ref href="#user-content-fn-1">config</a>
 Discovery.MDNS.Enabled = false, Swarm.DisableNatPortMap = true
 </code></pre>
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (11) (1) (1).png" alt="" width="326"><figcaption></figcaption></figure>
 

@@ -1,6 +1,6 @@
 # CreditCoin
 
-<figure><img src="../../.gitbook/assets/project3.jpg" alt="" width="100"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/project3 (2).jpg" alt="" width="100"><figcaption></figcaption></figure>
 
 ## Minimum Requirements
 

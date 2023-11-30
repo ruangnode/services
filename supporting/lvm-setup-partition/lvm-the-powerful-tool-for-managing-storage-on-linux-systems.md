@@ -12,7 +12,7 @@ You can use this [link](https://hetzner.cloud/?ref=fxDrSw6FUI51) to get a discou
 
 Click install OS with rescue system
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 After you've completed your order, please SSH into the server using the command :&#x20;
 

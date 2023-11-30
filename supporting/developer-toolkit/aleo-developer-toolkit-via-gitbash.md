@@ -14,7 +14,7 @@
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 Press **1** and **Enter**
 
@@ -24,13 +24,13 @@ Press **1** and **Enter**
 git clone https://github.com/AleoHQ/leo
 ```
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```
 cd leo
 ```
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 **1.3 Install Leo**
 
@@ -38,11 +38,11 @@ cd leo
 cargo install --path .
 ```
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 **1.4 Try writing `leo help` command**
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Working with Leo <a href="#7193" id="7193"></a>
 
@@ -71,7 +71,7 @@ aleo@ruangnode-2:~$ pwd
 leo example tictactoe
 ```
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 **2.4 You can run and see the example in action**
 
@@ -85,7 +85,7 @@ and run
 leo run new
 ```
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Push your Leo app to GitHub <a href="#3118" id="3118"></a>
 
@@ -112,12 +112,12 @@ Now you can commit
 git commit -m "First commit"
 ```
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 3.4 Adding a local repository to GitHub using Git\
 Create a new repository on [GitHub](https://github.com/new)
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Type your repository name (you can call it whatever you want) and press Create repository (to avoid errors, do not initialize the new repository with README, license, or gitignore files)
@@ -125,7 +125,7 @@ Type your repository name (you can call it whatever you want) and press Create r
 
 **3.5 Copy the link to your repository**
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 **3.6 Continue in your existing terminal window and type**
 
@@ -139,7 +139,7 @@ git remote -v
 git push -u origin main
 ```
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 ### 4. Congratulations, you can view your repository via your link or in your GitHub profile <a href="#b9a6" id="b9a6"></a>
 
@@ -150,11 +150,11 @@ example : [https://github.com/ruangnode/aleo-tictactoe](https://github.com/ruang
 5.1 Go to the Leo [repo](https://github.com/AleoHQ/leo/issues)\
 Click “New Issue” in the top right corner
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 Click “Get started” in the Documentation row
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 `Title your issue: “Add <your_github_username> to contributors” Enter the following as your issue description:`
 
@@ -165,7 +165,7 @@ Tutorial Repo: <GITHUB_REPO_URL>
 Requested badge: <BADGE_TYPE>
 ```
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-11-21 032243.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-11-21 032243.png" alt=""><figcaption></figcaption></figure>
 
 After that you can submit your issue
 

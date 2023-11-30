@@ -1,6 +1,7 @@
 # Table of contents
 
 * [👋 Ruangnode!](README.md)
+* [Support Network](support-network.md)
 
 ## Mainnet
 
@@ -53,11 +54,6 @@
   * [Full node setup](testnet/tangle/full-node-setup.md)
   * [Start validating](testnet/tangle/start-validating.md)
 
-***
-
-* [Developer Toolkit](developer-toolkit/README.md)
-  * [Aleo developer Toolkit via Gitbash](developer-toolkit/aleo-developer-toolkit-via-gitbash.md)
-
 ## Monitoring & Alerting
 
 * [Install Monitoring Stack](monitoring/monitoring-stack.md)
@@ -78,10 +74,9 @@
 
 * [Abuse NetscanOutLevel: Netscan detected Issues in Server](supporting/abuse-netscanoutlevel-netscan-detected-issues-in-server.md)
 * [EVM Wallet by PrivateKey](supporting/evm-wallet-by-privatekey.md)
-
-***
-
-* [LVM setup partition](lvm-setup-partition/README.md)
-  * [LVM: The Powerful Tool for Managing Storage on Linux Systems](lvm-setup-partition/lvm-the-powerful-tool-for-managing-storage-on-linux-systems.md)
-  * [Basic command LVM](lvm-setup-partition/basic-command-lvm.md)
-  * [Docker mounting](lvm-setup-partition/docker-mounting.md)
+* [Developer Toolkit](supporting/developer-toolkit/README.md)
+  * [Aleo developer Toolkit via Gitbash](supporting/developer-toolkit/aleo-developer-toolkit-via-gitbash.md)
+* [LVM setup partition](supporting/lvm-setup-partition/README.md)
+  * [LVM: The Powerful Tool for Managing Storage on Linux Systems](supporting/lvm-setup-partition/lvm-the-powerful-tool-for-managing-storage-on-linux-systems.md)
+  * [Basic command LVM](supporting/lvm-setup-partition/basic-command-lvm.md)
+  * [Docker mounting](supporting/lvm-setup-partition/docker-mounting.md)
