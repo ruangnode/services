@@ -1,7 +1,7 @@
 # Table of contents
 
 * [👋 Ruangnode!](README.md)
-* [Support Network](support-network.md)
+* [🛠 Support Network](support-network.md)
 
 ## Mainnet
 
