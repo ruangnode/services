@@ -1,4 +1,4 @@
-# Page 1
+# Crossfi
 
 ### Manual Installation <a href="#installation" id="installation"></a>
 
@@ -29,7 +29,7 @@ source $HOME/.bash_profile
 echo "export WALLET="wallet"" >> $HOME/.bash_profile
 echo "export MONIKER="test"" >> $HOME/.bash_profile
 echo "export CROSSFI_CHAIN_ID="crossfi-evm-testnet-1"" >> $HOME/.bash_profile
-echo "export CROSSFI_PORT="36"" >> $HOME/.bash_profile
+echo "export CROSSFI_PORT="10"" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
 # download binary
@@ -152,7 +152,7 @@ crossfid tx staking create-validator \
 --pubkey $(crossfid tendermint show-validator) \
 --moniker "test" \
 --identity "" \
---details "I love blockchain ❤️" \
+--details "" \
 --chain-id crossfi-evm-testnet-1 \
 --gas auto --gas-adjustment 1.5 --gas-prices 10000000000000mpx \
 -y
