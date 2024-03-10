@@ -170,5 +170,3 @@ else
    echo "Make sure your OS is Ubuntu"
 fi  
 ```
-
-> Reference RoomIT : [https://docs.roomit.xyz](https://docs.roomit.xyz/)
