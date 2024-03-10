@@ -21,7 +21,3 @@ services:
       - 3001:3001  # <Host Port>:<Container Port>
     restart: always
 ```
-
-{% hint style="info" %}
-Reference [https://github.com/louislam/uptime-kuma](https://github.com/louislam/uptime-kuma)
-{% endhint %}

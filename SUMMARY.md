@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🛠 Support Network](README.md)
+* [🛠️ Support Network](README.md)
 
 ## Mainnet
 
@@ -52,6 +52,7 @@
 * [Tangle](testnet/tangle/README.md)
   * [Full node setup](testnet/tangle/full-node-setup.md)
   * [Start validating](testnet/tangle/start-validating.md)
+* [Page 1](testnet/page-1.md)
 
 ## Monitoring & Alerting
 

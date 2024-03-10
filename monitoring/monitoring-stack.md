@@ -1,7 +1,7 @@
 ---
-description: Install Grafana and Prometheus
+description: Install Grafana, Prometheus & Uptime Kuma
 ---
 
 # Install Monitoring Stack
 
-> Reference RoomIT : [https://docs.roomit.xyz/](https://docs.roomit.xyz/)&#x20;
+>
