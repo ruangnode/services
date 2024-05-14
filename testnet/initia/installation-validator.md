@@ -29,7 +29,7 @@ source $HOME/.bash_profile
 
 # set vars
 echo "export WALLET="wallet"" >> $HOME/.bash_profile
-echo "export MONIKER="ruangnode"" >> $HOME/.bash_profile
+echo "export MONIKER="test"" >> $HOME/.bash_profile
 echo "export INITIA_CHAIN_ID="initiation-1"" >> $HOME/.bash_profile
 echo "export INITIA_PORT="19"" >> $HOME/.bash_profile
 source $HOME/.bash_profile
