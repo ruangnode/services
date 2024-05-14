@@ -135,7 +135,7 @@ initiad query bank balances $WALLET_ADDRESS
 **Create Validator**
 
 ```bash
-initiad tx mstaking create-validator \
+initiad tx staking create-validator \
     --amount=5000000uinit \
     --pubkey=$(initiad tendermint show-validator) \
     --moniker="<your_moniker>" \
