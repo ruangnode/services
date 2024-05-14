@@ -171,17 +171,17 @@ MonikerIdentityDetailsAmount, uwardCommission rateCommission max rateCommission 
 Create New Validator
 
 ```bash
-initiad tx staking create-validator \
-    --amount=5000000uinit \ 
-    --pubkey=$(initiad tendermint show-validator) \
-    --moniker="ruangnode" \
-    --chain-id=initiation-1 \
-    --from=wallet \
-    --commission-rate="0.10" \
-    --commission-max-rate="0.20" \
-    --commission-max-change-rate="0.01" \
-    --identity=0F156587B4758669 \
-    -y
+initiad tx mstaking create-validator \
+--amount="5000000uinit" \
+--pubkey=$(initiad tendermint show-validator) \
+--moniker="test" \
+--chain-id=initiation-1 \
+--from=wallet \
+--commission-rate="0.10" \
+--commission-max-rate="0.20" \
+--commission-max-change-rate="0.01" \
+--identity="" \
+--fees 30000uinit
 ```
 
 Edit Existing Validator
@@ -194,7 +194,7 @@ initiad tx staking edit-validator \
 --details "" \
 --from $WALLET \
 --chain-id initiation-1 \
---gas auto --gas-adjustment 1.5 --fees 0uinit \
+--gas auto --gas-adjustment 1.5 --fees 3000uinit \
 -y 
 ```
 

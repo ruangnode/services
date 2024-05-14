@@ -135,15 +135,15 @@ initiad query bank balances $WALLET_ADDRESS
 **Create Validator**
 
 ```bash
-initiad tx staking create-validator \
-    --amount=5000000uinit \
-    --pubkey=$(initiad tendermint show-validator) \
-    --moniker="<your_moniker>" \
-    --chain-id=<chain_id> \
-    --from=<key_name> \
-    --commission-rate="0.10" \
-    --commission-max-rate="0.20" \
-    --commission-max-change-rate="0.01" \
-    --identity=<keybase_identity>
-
+initiad tx mstaking create-validator \
+--amount="5000000uinit" \
+--pubkey=$(initiad tendermint show-validator) \
+--moniker="test" \
+--chain-id=initiation-1 \
+--from=wallet \
+--commission-rate="0.10" \
+--commission-max-rate="0.20" \
+--commission-max-change-rate="0.01" \
+--identity="" \
+--fees 30000uinit
 ```
