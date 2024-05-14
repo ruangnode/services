@@ -84,7 +84,8 @@ sed -i 's|minimum-gas-prices =.*|minimum-gas-prices = "0.0025uinit"|g' $HOME/.in
 sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.initia/config/config.toml
 sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.initia/config/config.toml
 
-# create service file
+# create service file\
+sudo tee /etc/systemd/system/initiad.service > /dev/null &#x3C;&#x3C;EOF
 [Unit]
 Description=Warden node
 After=network-online.target
