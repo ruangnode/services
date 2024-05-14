@@ -105,7 +105,7 @@ SOON
 # enable and start service
 sudo systemctl daemon-reload
 sudo systemctl enable initiad
-sudo systemctl restart initiadd &#x26;&#x26; sudo journalctl -u initiad -f
+sudo systemctl restart initiad &#x26;&#x26; sudo journalctl -u initiad -f
 </code></pre>
 
 \
