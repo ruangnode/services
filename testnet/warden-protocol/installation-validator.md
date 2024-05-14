@@ -150,7 +150,7 @@ sed -i -e "s%^address = \"tcp://0.0.0.0:1317\"%address = \"tcp://0.0.0.0:17817\"
 #### Download latest chain snapshot <a href="#download-latest-chain-snapshot" id="download-latest-chain-snapshot"></a>
 
 ```
-curl -L https://snapshots.kjnodes.com/warden-testnet/snapshot_latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.warden
+curl -L https://testnet-file.ruangnode.com/snap-testnet/warden-testnet/snap_warden.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.warden
 [[ -f $HOME/.warden/data/upgrade-info.json ]] && cp $HOME/.warden/data/upgrade-info.json $HOME/.warden/cosmovisor/genesis/upgrade-info.json
 ```
 
