@@ -13,4 +13,6 @@ export GOPATH="${HOME}/lib"
 make install
 
 mv ${HOME}/lib/bin/* ~/go/bin/
+
+sudo systemctl restart initiad && sudo journalctl -u initiad -f
 ```
