@@ -87,7 +87,7 @@ sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.initia/config/config.toml
 # create service file\
 sudo tee /etc/systemd/system/initiad.service > /dev/null &#x3C;&#x3C;EOF
 [Unit]
-Description=Warden node
+Description=Initia node
 After=network-online.target
 [Service]
 User=$USER
