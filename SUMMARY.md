@@ -60,9 +60,9 @@
   * [Snapshoot](testnet/warden-protocol/snapshoot.md)
 * [Initia](testnet/initia/README.md)
   * [Installation Validator](testnet/initia/installation-validator.md)
-  * [Command](testnet/initia/command.md)
   * [Endpoint Public](testnet/initia/endpoint-public.md)
   * [Snapshoot](testnet/initia/snapshoot.md)
+  * [Cheat sheet](testnet/initia/cheat-sheet.md)
 
 ## Monitoring & Alerting
 

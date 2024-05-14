@@ -1,8 +1,6 @@
 # Initia
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
-
-## Hardware requirements
+Hardware requirements
 
 For running a **node and full node** we recommend the following hardware resources:
 
