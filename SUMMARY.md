@@ -63,6 +63,7 @@
   * [Endpoint Public](testnet/initia/endpoint-public.md)
   * [Snapshoot](testnet/initia/snapshoot.md)
   * [Cheat sheet](testnet/initia/cheat-sheet.md)
+  * [Upgrade](testnet/initia/upgrade.md)
 
 ## Monitoring & Alerting
 
