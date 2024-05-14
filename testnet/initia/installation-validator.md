@@ -108,5 +108,41 @@ sudo systemctl enable initiad
 sudo systemctl restart initiad &#x26;&#x26; sudo journalctl -u initiad -f
 </code></pre>
 
-\
-\
+**Create Wallet**
+
+```bash
+# to create a new wallet, use the following command. don’t forget to save the mnemonic
+initiad keys add $WALLET
+
+# to restore exexuting wallet, use the following command
+initiad keys add $WALLET --recover
+
+# save wallet and validator address
+WALLET_ADDRESS=$(initiad keys show $WALLET -a)
+VALOPER_ADDRESS=$(initiad keys show $WALLET --bech val -a)
+echo "export WALLET_ADDRESS="$WALLET_ADDRESS >> $HOME/.bash_profile
+echo "export VALOPER_ADDRESS="$VALOPER_ADDRESS >> $HOME/.bash_profile
+source $HOME/.bash_profile
+
+# check sync status, once your node is fully synced, the output from above will print "false"
+initiad status 2>&1 | jq 
+
+# before creating a validator, you need to fund your wallet and check balance
+initiad query bank balances $WALLET_ADDRESS 
+```
+
+**Create Validator**
+
+```bash
+initiad tx mstaking create-validator \
+    --amount=5000000uinit \
+    --pubkey=$(initiad tendermint show-validator) \
+    --moniker="<your_moniker>" \
+    --chain-id=<chain_id> \
+    --from=<key_name> \
+    --commission-rate="0.10" \
+    --commission-max-rate="0.20" \
+    --commission-max-change-rate="0.01" \
+    --identity=<keybase_identity>
+
+```
