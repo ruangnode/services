@@ -8,7 +8,7 @@ cd $HOME
 rm -rf initia
 git clone https://github.com/initia-labs/initia
 cd initia
-git checkout v0.2.11
+git checkout v0.2.12
 export GOPATH="${HOME}/lib"
 make install
 
