@@ -80,7 +80,7 @@ sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"100\"/" $HOME/.in
 sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"50\"/" $HOME/.initia/config/app.toml
 
 # set minimum gas price, enable prometheus and disable indexing
-sed -i 's|minimum-gas-prices =.*|minimum-gas-prices = "0.0025uinit"|g' $HOME/.initia/config/app.toml
+sed -i -e "s|^minimum-gas-prices *=.*|minimum-gas-prices = \"0.15uinit,0.01uusdc\"|" $HOME/.initia/config/app.toml
 sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.initia/config/config.toml
 sed -i -e "s/^indexer *=.*/indexer = \"null\"/" $HOME/.initia/config/config.toml
 
@@ -136,14 +136,19 @@ initiad query bank balances $WALLET_ADDRESS
 
 ```bash
 initiad tx mstaking create-validator \
---amount="5000000uinit" \
---pubkey=$(initiad tendermint show-validator) \
---moniker="test" \
---chain-id=initiation-1 \
---from=wallet \
---commission-rate="0.10" \
---commission-max-rate="0.20" \
---commission-max-change-rate="0.01" \
---identity="" \
---fees 30000uinit
+--amount 1000000uinit \
+--pubkey $(initiad tendermint show-validator) \
+--moniker "$MONIKER" \
+--identity "YOUR_IDENTITY" \
+--details "YOUR_DETAILS" \
+--website "YOUR_WEBSITE" \
+--chain-id initiation-1 \
+--commission-rate 0.05 \
+--commission-max-rate 0.20 \
+--commission-max-change-rate 0.05 \
+--from $WALLET \
+--gas-adjustment 1.4 \
+--gas auto \
+--gas-prices 0.15uinit \
+-y
 ```

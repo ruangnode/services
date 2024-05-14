@@ -181,7 +181,10 @@ initiad tx mstaking create-validator \
 --commission-max-rate="0.20" \
 --commission-max-change-rate="0.01" \
 --identity="" \
---fees 30000uinit
+--gas-adjustment 1.4 \
+--gas auto \
+--gas-prices 0.15uinit \
+-y
 ```
 
 Edit Existing Validator
@@ -194,8 +197,10 @@ initiad tx staking edit-validator \
 --details "" \
 --from $WALLET \
 --chain-id initiation-1 \
---gas auto --gas-adjustment 1.5 --fees 3000uinit \
--y 
+--gas-adjustment 1.4 \
+--gas auto \
+--gas-prices 0.15uinit \
+-y
 ```
 
 Validator info
