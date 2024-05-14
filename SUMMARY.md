@@ -57,6 +57,7 @@
   * [Installation Validator](testnet/warden-protocol/installation-validator.md)
   * [Command Band](testnet/warden-protocol/command-band.md)
   * [Endpoint Public](testnet/warden-protocol/endpoint-public.md)
+  * [Snapshoot](testnet/warden-protocol/snapshoot.md)
 
 ## Monitoring & Alerting
 

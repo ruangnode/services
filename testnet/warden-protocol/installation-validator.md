@@ -124,8 +124,8 @@ wardend config node tcp://localhost:17857
 wardend init $MONIKER --chain-id buenavista-1
 
 # Download genesis and addrbook
-curl -Ls https://snapshots.kjnodes.com/warden-testnet/genesis.json > $HOME/.warden/config/genesis.json
-curl -Ls https://snapshots.kjnodes.com/warden-testnet/addrbook.json > $HOME/.warden/config/addrbook.json
+curl -Ls https://testnet-file.ruangnode.com/snap-testnet/warden-testnet/genesis.json > $HOME/.warden/config/genesis.json
+curl -Ls https://testnet-file.ruangnode.com/snap-testnet/warden-testnet/addrbook.json > $HOME/.warden/config/addrbook.json
 
 # Add seeds
 sed -i -e "s|^seeds *=.*|seeds = \"3f472746f46493309650e5a033076689996c8881@warden-testnet.rpc.kjnodes.com:17859\"|" $HOME/.warden/config/config.toml
