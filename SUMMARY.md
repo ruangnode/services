@@ -53,6 +53,10 @@
   * [Full node setup](testnet/tangle/full-node-setup.md)
   * [Start validating](testnet/tangle/start-validating.md)
 * [Crossfi](testnet/crossfi.md)
+* [Warden Protocol](testnet/warden-protocol/README.md)
+  * [Installation Validator](testnet/warden-protocol/installation-validator.md)
+  * [Command Band](testnet/warden-protocol/command-band.md)
+  * [Endpoint Public](testnet/warden-protocol/endpoint-public.md)
 
 ## Monitoring & Alerting
 
