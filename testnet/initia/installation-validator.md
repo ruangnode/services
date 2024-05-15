@@ -2,7 +2,7 @@
 
 | Chain ID     | Latest Version Tag	 | Wasm |
 | ------------ | ------------------- | ---- |
-| initiation-1 | v0.2.12             | off  |
+| initiation-1 | v0.2.14             | off  |
 
 Update and install packages for compiling
 
@@ -39,7 +39,7 @@ cd $HOME
 mkdir lib
 git clone https://github.com/initia-labs/initia
 cd initia
-git checkout v0.2.12
+git checkout v0.2.14
 export GOPATH="${HOME}/lib"
 make install
 
