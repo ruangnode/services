@@ -50,7 +50,8 @@ initiad init $MONIKER --chain-id initiation-1
 sed -i -e "s|^node *=.*|node = \"tcp://localhost:${INITIA_PORT}657\"|" $HOME/.initia/config/client.toml
 
 # download genesis and addrbook
-wget -O $HOME/.initia/config/genesis.json https://initia.s3.ap-southeast-1.amazonaws.com/initiation-1/genesis.json
+curl -Ls https://testnet-file.ruangnode.com/snap-testnet/initia-testnet/genesis.json > $HOME/.initia/config/genesis.json
+curl -Ls https://testnet-file.ruangnode.com/snap-testnet/initia-testnet/addrbook.json > $HOME/.initia/config/addrbook.json
 
 # set seeds and peers
 PEERS="093e1b89a498b6a8760ad2188fbda30a05e4f300@35.240.207.217:26656"
@@ -101,7 +102,8 @@ WantedBy=multi-user.target
 EOF
 
 # reset and download snapshot
-SOON
+curl -L https://testnet-file.ruangnode.com/snap-testnet/initia-testnet/snapshot_latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.initia
+[[ -f $HOME/.initia/data/upgrade-info.json ]] &#x26;&#x26; cp $HOME/.initia/data/upgrade-info.json $HOME/.initia/cosmovisor/genesis/upgrade-info.json
 
 # enable and start service
 sudo systemctl daemon-reload
