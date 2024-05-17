@@ -11,7 +11,7 @@ rm -rf $HOME/.initia/data
 #### Download latest snapshot <a href="#download-latest-snapshot" id="download-latest-snapshot"></a>
 
 ```
-curl -L https://testnet-file.ruangnode.com/snap-testnet/initia-testnet/snapshot_latest.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.initia
+curl -L https://testnet-file.ruangnode.com/snap-testnet/initia-testnet/snap_initia.tar.lz4 | tar -Ilz4 -xf - -C $HOME/.initia
 mv $HOME/.initia/priv_validator_state.json.backup $HOME/.initia/data/priv_validator_state.json
 ```
 
