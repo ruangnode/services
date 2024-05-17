@@ -63,6 +63,7 @@
     * [Setup Oracle](testnet/initia/installation-validator/setup-oracle.md)
   * [Endpoint Public](testnet/initia/endpoint-public.md)
   * [Snapshoot](testnet/initia/snapshoot.md)
+  * [State sync](testnet/initia/state-sync.md)
   * [Cheat sheet](testnet/initia/cheat-sheet.md)
   * [Upgrade](testnet/initia/upgrade.md)
 
