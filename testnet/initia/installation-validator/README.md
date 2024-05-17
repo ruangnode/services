@@ -101,14 +101,6 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 
-# reset and download snapshot
-initiad tendermint unsafe-reset-all --home $HOME/.initia
-if curl -s --head curl https://testnet-file.ruangnode.com/snap-testnet/initia-testnet/snap_initia.tar.lz4 | head -n 1 | grep "200" > /dev/null; then
-  curl https://testnet-files.itrocket.net/initia/snap_initia.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.initia
-    else
-  echo no have snap
-fi
-
 # enable and start service
 sudo systemctl daemon-reload
 sudo systemctl enable initiad
