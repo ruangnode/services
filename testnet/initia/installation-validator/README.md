@@ -2,7 +2,7 @@
 
 | Chain ID     | Latest Version Tag	 | Wasm |
 | ------------ | ------------------- | ---- |
-| initiation-1 | v0.2.14             | off  |
+| initiation-1 | v0.2.15             | off  |
 
 Update and install packages for compiling
 
