@@ -49,8 +49,8 @@ git clone https://github.com/crossfichain/testnet.git
 mv $HOME/testnet/ $HOME/.mineplex-chain/
 
 # download genesis and addrbook
-wget -O $HOME/.mineplex-chain/config/genesis.json https://testnet-files.itrocket.net/crossfi/genesis.json
-wget -O $HOME/.mineplex-chain/config/addrbook.json https://testnet-files.itrocket.net/crossfi/addrbook.json
+wget -O $HOME/.mineplex-chain/config/genesis.json https://testnet-file.ruangnode.com/snap-testnet/crossfi-testnet/genesis.json
+wget -O $HOME/.mineplex-chain/config/addrbook.json https://testnet-file.ruangnode.com/snap-testnet/crossfi-testnet/addrbook.json
 
 # set seeds and peers
 SEEDS="dd83e3c7c4e783f8a46dbb010ec8853135d29df0@crossfi-testnet-seed.itrocket.net:36656"
@@ -102,8 +102,8 @@ EOF
 
 # reset and download snapshot
 crossfid tendermint unsafe-reset-all --home $HOME/.mineplex-chain
-if curl -s --head curl https://testnet-files.itrocket.net/crossfi/snap_crossfi.tar.lz4 | head -n 1 | grep "200" > /dev/null; then
-  curl https://testnet-files.itrocket.net/crossfi/snap_crossfi.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.mineplex-chain
+if curl -s --head curl https://testnet-file.ruangnode.com/snap-testnet/crossfi-testnet/snap_crossfi.tar.lz4 | head -n 1 | grep "200" > /dev/null; then
+  curl https://testnet-file.ruangnode.com/snap-testnet/crossfi-testnet/snap_crossfi.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.mineplex-chain
     else
   echo no have snap
 fi
