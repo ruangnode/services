@@ -188,7 +188,7 @@ crossfid tx staking edit-validator \
 --commission-rate 0.1 \
 --new-moniker "$MONIKER" \
 --identity "" \
---details "I love blockchain ❤️" \
+--details "" \
 --from $WALLET \
 --chain-id crossfi-evm-testnet-1 \
 --gas auto --gas-adjustment 1.5 --gas-prices 10000000000000mpx \
