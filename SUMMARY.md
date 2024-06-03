@@ -54,6 +54,7 @@
   * [Start validating](testnet/tangle/start-validating.md)
 * [Crossfi](testnet/crossfi/README.md)
   * [Upgrade](testnet/crossfi/upgrade.md)
+  * [Cheat Sheet](testnet/crossfi/cheat-sheet.md)
 * [Warden Protocol](testnet/warden-protocol/README.md)
   * [Installation Validator](testnet/warden-protocol/installation-validator.md)
   * [Command Band](testnet/warden-protocol/command-band.md)
